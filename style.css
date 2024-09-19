@@ -1,0 +1,98 @@
+/* Base styles */
+body, input, button, a {
+    font-family: 'Courier New', monospace; /* Monospace font for all text */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    transition: background-color 0.4s ease, color 0.4s ease;
+    padding: 20px;
+    background-color: #eaeaea; /* Lighter background color */
+    -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, p {
+    margin-bottom: 20px;
+}
+
+/* Card styles */
+.card {
+    background-color: #1e1e1e; /* Dark background for cards */
+    color: #ffffff; /* White text for better contrast */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    padding: 20px; /* Inner padding */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+/* Profile Image Styles */
+.profile-image {
+    width: 150px; /* Set a fixed width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    margin-bottom: 20px; /* Space below the image */
+    border: 3px solid #1e90ff; /* Add a border with accent color */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow for depth */
+}
+
+/* Button styles */
+button, .social-links a {
+    padding: 12px 24px; /* Consistent padding */
+    border: none;
+    cursor: pointer;
+    border-radius: 50px; /* More pronounced curve for buttons */
+    font-size: 16px;
+    font-weight: bold; 
+    transition: background-color 0.4s, transform 0.3s ease;
+}
+
+button:hover,
+.social-links a:hover {
+    transform: translateY(-3px);
+}
+
+/* Input styles */
+input {
+    padding: 14px;
+    width: calc(100% - 30px);
+    border: 2px solid #ccc; 
+    margin-bottom: 20px;
+    border-radius: 20px; 
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #121212; /* Darker background for dark mode */
+}
+
+.card.dark-mode {
+    background-color: #1e1e1e; /* Dark card background for dark mode */
+}
+
+button.dark-mode {
+    background-color: #1e90ff; /* Button color in dark mode */
+}
+
+/* Light mode */
+body.light-mode {
+    background-color: #f7f7f7;
+}
+
+/* Color accents */
+.highlight {
+    color: #1e90ff; 
+}
+
+/* Social links */
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 12px 20px; /* Adjusted padding for social links */
+    background-color: #007aff; 
+    color: #fff;
+}
