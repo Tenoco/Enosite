@@ -6,51 +6,61 @@
     <meta name="description" content="Enosite - Enoch's portfolio showcasing expertise in Python and web development.">
     <meta name="keywords" content="Enoch, Python, Web Development">
     <meta name="author" content="Enoch">
-    <title>Enoch's Portfolio</title>
+    <title>Enosite</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="icon.jpg"> 
 
+    <!-- iOS-style icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
     <link rel="stylesheet" href="style.css">
+    <style>
+        body, button, input {
+            font-family: 'Courier New', monospace;
+        }
+    </style>
 </head>
 <body class="dark-mode">
     <div class="container">
-        <h1 class="highlight">Enosite - Enoch's Portfolio</h1>
-
-        <!-- Image Element -->
-        <img src="image.jpg" alt="A picture of Enoch" class="profile-image">
+        <nav class="ios-nav">
+            <button class="nav-button"><i class="fas fa-bars"></i></button>
+            <h1 class="highlight">Enosite</h1>
+            <img src="image.jpg" alt="A picture of Enoch" class="profile-image">
+        </nav>
 
         <div class="card">
+            <i class="fas fa-code fa-3x"></i>
             <p>Hello! I'm <span class="highlight">Enoch</span>, a passionate developer specializing in Python and web technologies.</p>
         </div>
 
         <div class="card">
-            <h2>What I Specialize In:</h2>
+            <h2><i class="fas fa-laptop-code"></i> What I Specialize In:</h2>
             <ul>
-                <li>Python Development</li>
-                <li>Web Development (HTML, CSS, JavaScript)</li>
-                <li>Interactive User Interfaces</li>
-                <li>API Integration & Automation</li>
+                <li><i class="fab fa-python"></i> Python Development</li>
+                <li><i class="fas fa-globe"></i> Web Development (HTML, CSS, JavaScript)</li>
+                <li><i class="fas fa-desktop"></i> Interactive User Interfaces</li>
+                <li><i class="fas fa-plug"></i> API Integration & Automation</li>
             </ul>
         </div>
 
         <div class="card">
-            <h2>Latest Projects:</h2>
+            <h2><i class="fas fa-project-diagram"></i> Latest Projects:</h2>
             <ul>
-                <li><b>T€N0C0 SEARCH</b>: A fast search engine tool.</li>
-                <li><b>SBT</b>: A natural language understanding module.</li>
+                <li><i class="fas fa-search"></i> <b>T€N0C0 SEARCH</b>: A fast search engine tool.</li>
+                <li><i class="fas fa-language"></i> <b>SBT</b>: A natural language understanding module.</li>
             </ul>
         </div>
 
-        <button id="theme-toggle">Switch to Light Mode</button>
+        <button id="theme-toggle"><i class="fas fa-adjust"></i> Switch to Light Mode</button>
 
-        <div class="social-links">
-            <a href="https://x.com/TEN0C0">X (Twitter)</a>
-            <a href="https://t.me/TEN0C0">Telegram</a>
-            <a href="https://github.com/Tenoco">GitHub</a>
+        <div class="social-links ios-buttons">
+            <a href="https://x.com/TEN0C0"><i class="fab fa-twitter"></i></a>
+            <a href="https://t.me/TEN0C0"><i class="fab fa-telegram"></i></a>
+            <a href="https://github.com/Tenoco"><i class="fab fa-github"></i></a>
         </div>
 
-        <div class="love-button" id="loveButton">❤️ Love this!</div>
+        <div class="love-button" id="loveButton"><i class="fas fa-heart"></i> Love this!</div>
     </div>
 
     <script src="script.js"></script>
